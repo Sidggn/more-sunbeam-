@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Customise Your Sunglasses</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="shell">
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">S</span>
+      <span>SOLE / CUSTOM</span>
+    </div>
+
+    <div class="step-label">
+      DESIGN YOURS
+      <span class="step-dot"></span>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero-copy">
+
+    <p class="eyebrow">ONE OF ONE</p>
+
+    <h1>
+      Make them<br>
+      <em>yours.</em>
+    </h1>
+
+    <p class="intro">
+      Build your sunglasses from the frame to the temples.
+      Choose every detail and see your design change instantly.
+    </p>
+
+  </section>
+
+
+  <!-- PREVIEW -->
+  <section class="preview-card">
+
+    <div class="preview-top">
+
+      <span>LIVE PREVIEW</span>
+
+      <span class="preview-status">
+        <i></i>
+        CONFIGURATION ACTIVE
+      </span>
+
+    </div>
+
+
+    <div class="glasses-stage">
+
+      <div class="studio-light studio-light-one"></div>
+      <div class="studio-light studio-light-two"></div>
+
+
+      <!-- GLASSES -->
+      <div id="glasses" class="glasses style-classic size-standard material-plastic">
+
+        <div class="arm arm-left">
+          <span id="templeNameLeft"></span>
+        </div>
+
+        <div class="arm arm-right">
+          <span id="templeNameRight"></span>
+        </div>
+
+        <div class="lens lens-left">
+          <span></span>
+        </div>
+
+        <div class="lens lens-right">
+          <span></span>
+        </div>
+
+        <div class="bridge"></div>
+
+        <div class="nose-pad nose-pad-left"></div>
+        <div class="nose-pad nose-pad-right"></div>
+
+      </div>
+
+
+      <p id="previewName" class="preview-name">
+        YOUR CUSTOM FRAME
+      </p>
+
+    </div>
+
+
+    <div class="preview-footer">
+
+      <span id="previewStyle">
+        CLASSIC
+      </span>
+
+      <span id="previewProtection">
+        UV + POLARISED
+      </span>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTROLS -->
+  <main class="controls">
+
+
+    <!-- FRAME STYLE -->
+    <fieldset class="control-group">
+
+      <legend>
+        <span>01 / FRAME STYLE</span>
+        <small id="styleValue">Classic</small>
+      </legend>
+
+      <div class="option-row">
+
+        <button class="option" data-type="style" data-value="classic">
+          <span class="option-visual">▢</span>
+          <span class="option-name">Classic</span>
+          <small>TIMELESS</small>
+        </button>
+
+        <button class="option" data-type="style" data-value="aviator">
+          <span class="option-visual">◇</span>
+          <span class="option-name">Aviator</span>
+          <small>ICONIC</small>
+        </button>
+
+        <button class="option" data-type="style" data-value="round">
+          <span class="option-visual">○</span>
+          <span class="option-name">Round</span>
+          <small>SOFT</small>
+        </button>
+
+        <button class="option" data-type="style" data-value="cat-eye">
+          <span class="option-visual">⌁</span>
+          <span class="option-name">Cat-Eye</span>
+          <small>BOLD</small>
+        </button>
+
+      </div>
+
+    </fieldset>
+
+
+    <!-- FRAME COLOR -->
+    <fieldset class="control-group">
+
+      <legend>
+        <span>02 / FRAME COLOR</span>
+        <small id="frameColorValue">Black</small>
+      </legend>
+
+      <div class="option-row color-grid">
+
+        <button class="option color-option selected"
+                data-type="frameColor"
+                data-name="Black"
+                data-color="#111111">
+          <span class="swatch" style="background:#111111"></span>
+          <span class="option-name">Black</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="frameColor"
+                data-name="Tortoise"
+                data-color="#60472d">
+          <span class="swatch" style="background:#60472d"></span>
+          <span class="option-name">Tortoise</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="frameColor"
+                data-name="Crystal"
+                data-color="#d9d9d9">
+          <span class="swatch" style="background:#d9d9d9"></span>
+          <span class="option-name">Crystal</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="frameColor"
+                data-name="Honey"
+                data-color="#c99445">
+          <span class="swatch" style="background:#c99445"></span>
+          <span class="option-name">Honey</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="frameColor"
+                data-name="Olive"
+                data-color="#59634a">
+          <span class="swatch" style="background:#59634a"></span>
+          <span class="option-name">Olive</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="frameColor"
+                data-name="Navy"
+                data-color="#17283d">
+          <span class="swatch" style="background:#17283d"></span>
+          <span class="option-name">Navy</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="frameColor"
+                data-name="Burgundy"
+                data-color="#672b35">
+          <span class="swatch" style="background:#672b35"></span>
+          <span class="option-name">Burgundy</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="frameColor"
+                data-name="Cream"
+                data-color="#e7dcc9">
+          <span class="swatch" style="background:#e7dcc9"></span>
+          <span class="option-name">Cream</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="frameColor"
+                data-name="Red"
+                data-color="#a83232">
+          <span class="swatch" style="background:#a83232"></span>
+          <span class="option-name">Red</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="frameColor"
+                data-name="Pink"
+                data-color="#c8878f">
+          <span class="swatch" style="background:#c8878f"></span>
+          <span class="option-name">Pink</span>
+        </button>
+
+      </div>
+
+    </fieldset>
+
+
+    <!-- LENS COLOR -->
+    <fieldset class="control-group">
+
+      <legend>
+        <span>03 / LENS COLOR</span>
+        <small id="lensColorValue">Smoke</small>
+      </legend>
+
+      <div class="option-row color-grid">
+
+        <button class="option option-lens selected"
+                data-type="lensColor"
+                data-name="Smoke"
+                data-color="#4a4a4a">
+          <span class="swatch" style="background:#4a4a4a"></span>
+          <span class="option-name">Smoke</span>
+        </button>
+
+        <button class="option option-lens"
+                data-type="lensColor"
+                data-name="Green"
+                data-color="#31584b">
+          <span class="swatch" style="background:#31584b"></span>
+          <span class="option-name">Green</span>
+        </button>
+
+        <button class="option option-lens"
+                data-type="lensColor"
+                data-name="Brown"
+                data-color="#704d35">
+          <span class="swatch" style="background:#704d35"></span>
+          <span class="option-name">Brown</span>
+        </button>
+
+        <button class="option option-lens"
+                data-type="lensColor"
+                data-name="Blue"
+                data-color="#31577c">
+          <span class="swatch" style="background:#31577c"></span>
+          <span class="option-name">Blue</span>
+        </button>
+
+        <button class="option option-lens"
+                data-type="lensColor"
+                data-name="Amber"
+                data-color="#a66b28">
+          <span class="swatch" style="background:#a66b28"></span>
+          <span class="option-name">Amber</span>
+        </button>
+
+        <button class="option option-lens"
+                data-type="lensColor"
+                data-name="Rose"
+                data-color="#92545d">
+          <span class="swatch" style="background:#92545d"></span>
+          <span class="option-name">Rose</span>
+        </button>
+
+        <button class="option option-lens"
+                data-type="lensColor"
+                data-name="Purple"
+                data-color="#57446f">
+          <span class="swatch" style="background:#57446f"></span>
+          <span class="option-name">Purple</span>
+        </button>
+
+        <button class="option option-lens"
+                data-type="lensColor"
+                data-name="Clear"
+                data-color="#dce5e7">
+          <span class="swatch" style="background:#dce5e7"></span>
+          <span class="option-name">Clear</span>
+        </button>
+
+      </div>
+
+    </fieldset>
+
+
+    <!-- TEMPLE COLOR -->
+    <fieldset class="control-group">
+
+      <legend>
+        <span>04 / TEMPLE COLOR</span>
+        <small id="templeColorValue">Black</small>
+      </legend>
+
+      <div class="option-row color-grid">
+
+        <button class="option color-option selected"
+                data-type="templeColor"
+                data-name="Black"
+                data-color="#111111">
+          <span class="swatch" style="background:#111111"></span>
+          <span class="option-name">Black</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="templeColor"
+                data-name="Gold"
+                data-color="#c49b45">
+          <span class="swatch" style="background:#c49b45"></span>
+          <span class="option-name">Gold</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="templeColor"
+                data-name="Silver"
+                data-color="#9d9d9d">
+          <span class="swatch" style="background:#9d9d9d"></span>
+          <span class="option-name">Silver</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="templeColor"
+                data-name="Navy"
+                data-color="#17283d">
+          <span class="swatch" style="background:#17283d"></span>
+          <span class="option-name">Navy</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="templeColor"
+                data-name="Green"
+                data-color="#45583f">
+          <span class="swatch" style="background:#45583f"></span>
+          <span class="option-name">Green</span>
+        </button>
+
+        <button class="option color-option"
+                data-type="templeColor"
+                data-name="Red"
+                data-color="#8e3030">
+          <span class="swatch" style="background:#8e3030"></span>
+          <span class="option-name">Red</span>
+        </button>
+
+      </div>
+
+    </fieldset>
+
+
+    <!-- SIZE -->
+    <fieldset class="control-group">
+
+      <legend>
+        <span>05 / SIZE</span>
+        <small id="sizeValue">Standard</small>
+      </legend>
+
+      <div class="option-row">
+
+        <button class="option" data-type="size" data-value="petite">
+          <span class="option-visual">S</span>
+          <span class="option-name">Petite</span>
+          <small>SMALL FIT</small>
+        </button>
+
+        <button class="option selected" data-type="size" data-value="standard">
+          <span class="option-visual">M</span>
+          <span class="option-name">Standard</span>
+          <small>MEDIUM FIT</small>
+        </button>
+
+        <button class="option" data-type="size" data-value="oversize">
+          <span class="option-visual">L</span>
+          <span class="option-name">Oversize</span>
+          <small>LARGE FIT</small>
+        </button>
+
+      </div>
+
+    </fieldset>
+
+
+    <!-- MATERIAL -->
+    <fieldset class="control-group">
+
+      <legend>
+        <span>06 / MATERIAL</span>
+        <small id="materialValue">Acetate</small>
+      </legend>
+
+      <div class="option-row">
+
+        <button class="option selected"
+                data-type="material"
+                data-value="plastic"
+                data-name="Acetate">
+          <span class="option-visual">A</span>
+          <span class="option-name">Acetate</span>
+          <small>PREMIUM</small>
+        </button>
+
+        <button class="option"
+                data-type="material"
+                data-value="titanium"
+                data-name="Titanium">
+          <span class="option-visual">Ti</span>
+          <span class="option-name">Titanium</span>
+          <small>LIGHTWEIGHT</small>
+        </button>
+
+        <button class="option"
+                data-type="material"
+                data-value="recycled-nylon"
+                data-name="Recycled Nylon">
+          <span class="option-visual">R</span>
+          <span class="option-name">Recycled Nylon</span>
+          <small>RECYCLED</small>
+        </button>
+
+      </div>
+
+    </fieldset>
+
+
+    <!-- POLARISATION -->
+    <fieldset class="control-group">
+
+      <legend>
+        <span>07 / POLARISATION</span>
+        <small id="polarisationValue">Yes</small>
+      </legend>
+
+      <div class="option-row">
+
+        <button class="option selected"
+                data-type="polarisation"
+                data-value="yes">
+          <span class="option-visual">✓</span>
+          <span class="option-name">Yes</span>
+          <small>GLARE REDUCTION</small>
+        </button>
+
+        <button class="option"
+                data-type="polarisation"
+                data-value="no">
+          <span class="option-visual">×</span>
+          <span class="option-name">No</span>
+          <small>STANDARD</small>
+        </button>
+
+      </div>
+
+    </fieldset>
+
+
+    <!-- UV -->
+    <fieldset class="control-group">
+
+      <legend>
+        <span>08 / UV PROTECTION</span>
+        <small id="uvValue">Required</small>
+      </legend>
+
+      <div class="option-row">
+
+        <button class="option selected"
+                data-type="uv"
+                data-value="yes">
+          <span class="option-visual">✓</span>
+          <span class="option-name">Required</span>
+          <small>UV400</small>
+        </button>
+
+        <button class="option"
+                data-type="uv"
+                data-value="no">
+          <span class="option-visual">×</span>
+          <span class="option-name">Not Required</span>
+          <small>STANDARD</small>
+        </button>
+
+      </div>
+
+    </fieldset>
+
+
+    <!-- TEMPLE PERSONALISATION -->
+    <fieldset class="control-group">
+
+      <legend>
+        <span>09 / TEMPLE PERSONALISATION</span>
+        <small>OPTIONAL</small>
+      </legend>
+
+      <div class="personalisation">
+
+        <label for="templeText">
+          ENGRAVE YOUR NAME / TEXT
+        </label>
+
+        <input
+          id="templeText"
+          type="text"
+          maxlength="18"
+          placeholder="e.g. SUDHANSHU"
+          autocomplete="off"
+        >
+
+        <div class="input-meta">
+          <span>MAX 18 CHARACTERS</span>
+          <span id="charCount">0 / 18</span>
+        </div>
+
+      </div>
+
+    </fieldset>
+
+  </main>
+
+
+  <!-- SUMMARY -->
+  <section class="summary">
+
+    <div>
+
+      <span class="summary-label">
+        YOUR CONFIGURATION
+      </span>
+
+      <strong id="summaryName">
+        Classic / Standard
+      </strong>
+
+      <p id="summaryDescription">
+        Black acetate frame with smoke lenses.
+      </p>
+
+    </div>
+
+
+    <div class="spec-list">
+
+      <span id="summaryMaterial">ACETATE</span>
+      <span id="summaryLens">SMOKE LENSES</span>
+      <span id="summaryProtection">UV400 / POLARISED</span>
+
+    </div>
+
+  </section>
+
+
+  <!-- ACTIONS -->
+  <section class="actions">
+
+    <button id="resetButton" class="reset">
+      RESET
+    </button>
+
+    <button id="saveButton" class="save">
+      <span>SAVE MY DESIGN</span>
+      <span>→</span>
+    </button>
+
+  </section>
+
+
+  <p class="fine-print">
+    Your design is saved locally on this device.
+  </p>
+
+
+  <!-- TOAST -->
+  <div id="toast" class="toast">
+    DESIGN SAVED
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
